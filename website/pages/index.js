@@ -1,6 +1,6 @@
 import css from "../styles/Home.module.css";
 import { Canvas } from "@react-three/fiber";
-import Floor from "../components/Floor";
+import Floor from "../components/floor";
 
 export default function Home() {
   return (
@@ -12,6 +12,7 @@ export default function Home() {
           position: [-6, 7, 7],
         }}
       >
+        <ambientLight color={"white"} intensity={0.3} />
           <Floor/>
       </Canvas>
     </div>
