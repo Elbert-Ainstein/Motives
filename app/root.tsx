@@ -16,7 +16,7 @@ import Footer from './components/footer';
 import ScrollObserver from './utils/scroll-observer';
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "Caffeinated",
+  title: "Motives",
   viewport: "width=device-width,initial-scale=1",
 });
 

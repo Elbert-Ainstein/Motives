@@ -70,10 +70,10 @@ const LeftTwo = () => {
                 className="text-xl md:text-3xl text-center md:text-left
                     tracking-tight opacity-80 italic"
                 >
-                    We made it easy
+                    So you can...
                 </p>
                 <p className="text-5xl mt-4 font-russo text-center md:text-left inline-block tracking-tight font-light ">
-                    to track activities
+                    manage your time
                 </p>
             </div>
         </div>
@@ -100,10 +100,10 @@ const LeftThree = () => {
                 className="text-white text-3xl text-center md:text-left
                     tracking-tight opacity-80 italic"
                 >
-                    We made it easy
+                    And...
                 </p>
                 <p className="text-white text-5xl mt-4 font-russo text-center md:text-left inline-block tracking-tight font-light ">
-                    to track activities
+                    Strive for excellency
                 </p>
             </div>
         </div>
