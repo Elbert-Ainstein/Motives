@@ -7,9 +7,6 @@ import img3 from "../../public/img3.jpg";
 const Works = () => {
     return (
         <div className="min-h-screen w-full relative bg-black overflow-hidden px-4">
-            <p className="font-russo pt-12 italic text-white text-5xl text-center">
-                Features
-            </p>
             <div className="relative">
                 <div className="min-h-fit md:px-32 md:flex pb-28 mt-6 w-full relative bg-black">
                     <LeftOne/>
