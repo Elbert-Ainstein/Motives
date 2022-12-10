@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap')
+
+body {
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Arial, Helvetica, sans-serif;
+  line-height: 1.1;
+}

@@ -1,0 +1,5 @@
+@media(max-width: 600px) {
+    .flex-lb {
+        flex-direction: column;
+    }
+}

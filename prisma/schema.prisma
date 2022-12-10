@@ -1,0 +1,79 @@
+
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = "mongodb+srv://pennacap:JZ3tMxuAwOYJzAPy@cluster0.4xdjujk.mongodb.net/db?retryWrites=true&w=majority"
+}
+
+enum PerkType {
+  DISCORD_ROLE
+  PREMIUM_ACCESS
+}
+
+model Creator {
+  id       String @id @default(cuid()) @map("_id")
+  url      String @unique
+  username String
+  bio      String
+  password String
+
+  logo   String
+  banner String
+
+  items       Item[]
+  discord_acc Int
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+}
+
+model Perk {
+  id        String   @id @default(cuid()) @map("_id")
+  type      PerkType
+  value     String
+  till      DateTime
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  Item      Item?    @relation(fields: [itemId], references: [id])
+  itemId    String?
+}
+
+model Review {
+  id          String   @id @default(cuid()) @map("_id")
+  rating      Int
+  description String
+  edited      Boolean
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  Item   Item?   @relation(fields: [itemId], references: [id])
+  itemId String?
+}
+
+model Item {
+  id          String @id @default(cuid()) @map("_id")
+  name        String
+  description String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  creator   Creator @relation(fields: [creatorId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  creatorId String
+
+  perks Perk[]
+  price Float
+  sku   Int
+
+  sold Int
+  goal Int
+
+  reviews Review[]
+  private Boolean
+}

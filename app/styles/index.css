@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+:root {
+  --neon-text-color: #f40;
+  --neon-border-color: #08f;
+}
+
+.noScroll {
+  overflow-y: hidden;
+}
+
+.noScrollChild {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.mastContainer {
+  border: 25px solid;
+  border-color: #000000;
+  animation: flicker 3s linear infinite;
+}
+
+
+
+.mastText {
+  font-style: italic;
+  color: #000;
+  opacity:1;
+  padding: 4rem 6rem 5.5rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  font-family: 'Russo One', sans-serif;
+}
+
+.flicker-slow{
+  animation: flicker 9s linear infinite;
+}
+
+.flicker-quick {
+  animation: flicker 5s linear infinite;
+}
+
+.flicker-fast {
+  animation: flicker 3s linear infinite;
+}
+
+
+.mountain {
+  background-image: url("https://i.pinimg.com/originals/30/1a/76/301a7693f9bd6485d69b43258697b581.jpg");
+}
+
+
+@keyframes flicker {
+    
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      border-color: #000;
+      /* text-shadow:
+          -0.2rem -0.2rem 1rem #fff,
+          0.2rem 0.2rem 1rem #000000, */
+          /* 0 0 2rem var(--neon-text-color),
+          0 0 4rem var(--neon-text-color),
+          0 0 6rem var(--neon-text-color),
+          0 0 8rem var(--neon-text-color),
+          0 0 10rem var(--neon-text-color); */
+  }
+  
+  20%, 24%, 55% {        
+      border-color: #fff;
+  }    
+}
+
+
+    
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      border-color: #000;
+      /* text-shadow:
+          -0.2rem -0.2rem 1rem #fff,
+          0.2rem 0.2rem 1rem #000000, */
+          /* 0 0 2rem var(--neon-text-color),
+          0 0 4rem var(--neon-text-color),
+          0 0 6rem var(--neon-text-color),
+          0 0 8rem var(--neon-text-color),
+          0 0 10rem var(--neon-text-color); */
+  }
+  
+  20%, 24%, 55% {        
+      border-color: #fff;
+  }    
+}
+
