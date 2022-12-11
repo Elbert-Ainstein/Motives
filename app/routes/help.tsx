@@ -12,7 +12,7 @@ export default function Help() {
                 <div className="card bg-primary text-primary-content m-24">
                     <div className="card-body text-center">
                         <h2 className="card-title text-center">Email</h2>
-                        <p>Our email is <a href="mailto:contact@caffeinated.store"><code>contact@caffeinated.store</code></a>!</p>
+                        <p>Our email is <a href="mailto:contact@caffeinated.store"><code>260878@hkis.edu.hk</code></a>!</p>
                     </div>
                 </div>
                 <div className="card bg-accent text-accent-content m-24">
@@ -20,7 +20,7 @@ export default function Help() {
                         <h2 className="card-title">Twitter</h2>
                         <p>Drop us a message on Twitter!</p>
                         <div className="card-actions justify-end">
-                            <a href="https://twitter.com/GGCaffeinated"><button className="btn">Open</button></a>
+                            <a href="https://twitter.com/"><button className="btn">Open</button></a>
                         </div>
                     </div>
                 </div>

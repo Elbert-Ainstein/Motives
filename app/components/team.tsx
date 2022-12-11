@@ -31,7 +31,7 @@ const Team: React.FC = () => {
                         <figure><img src="https://cdn.discordapp.com/avatars/585035293313204228/84fc0feb85481d4aa1798e7e1a612be9.png" alt="Phantom" className="w-full"/></figure>
                         <div className="p-8 flex my-auto bg-gray-800 text-gray-100">
                             <div className="w-fit flex-none">
-                                <h2 className="card-title tracking-tight">Phantom</h2>
+                                <h2 className="card-title tracking-tight">Andy</h2>
                                 <p className="opacity-50 mt-3">Cofounder and Senior Dev</p>
                             </div>
                             <div className="card-action flex-1 relative justify-end w-full">
