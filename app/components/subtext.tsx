@@ -48,7 +48,7 @@ const Subtext: React.FC = () => {
                             opacity: opacityForBlock(progress, 0)
                         }}
                     >
-                        Motives is an end-to-end solution for all the self-learners out there. Our team provides a custom-tailored online platform that fits your needs. Our service is completely run by our in house team in order to ensure the best quality for you. 
+                        Motives is an end-to-end solution for all the self-learners out there. Our team provides a custom-tailored mobile IOS app that fits your needs. Our service is completely run by our in house team in order to ensure the best quality for you. 
                     </div>
                 </Parallax>
         </div>
